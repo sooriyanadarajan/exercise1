@@ -8,5 +8,5 @@ const collectionController = new CollectionController();
 
 const router = express.Router()
 
-router.get('/collection/list', asyncHandler(collectionController.listCollection))
+router.post('/collection/list', asyncHandler(collectionController.listCollection))
 module.exports = router
